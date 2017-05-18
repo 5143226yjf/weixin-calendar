@@ -1,0 +1,36 @@
+<view class="calendar">
+   <view class="calendar-title-box">
+     <view class="prev-month" bindtap="doDay" data-key='left'></view>
+     <text>{{currentDate}}</text>
+     <view class="next-month" bindtap="doDay" data-key="right"></view>
+   </view>
+   <view class="box-flex">  
+      <view class="flex-item">  
+        <view class="item-content">一</view>  
+      </view>  
+      <view class="flex-item">  
+        <view class="item-content">二</view>  
+      </view>  
+      <view class="flex-item">  
+        <view class="item-content">三</view>  
+      </view>  
+      <view class="flex-item">  
+        <view class="item-content">四</view>  
+      </view>  
+      <view class="flex-item">  
+        <view class="item-content">五</view>  
+      </view>  
+      <view class="flex-item">  
+        <view class="item-content">六</view>  
+      </view>  
+      <view class="flex-item">  
+        <view class="item-content">日</view>  
+      </view>  
+    </view>  
+    <view class="box-flex">  
+      <view class="flex-item" wx:for="{{currentDayList}}" wx:for-index='key' wx:for-item="vo" wx:key="{{key}}">  
+          <view class="item-content" wx:if="{{currentDay != vo}}">{{vo}}</view>  
+          <view class="item-content bk-color-day" wx:else>{{vo}}</view>  
+      </view>  
+    </view>  
+</view>

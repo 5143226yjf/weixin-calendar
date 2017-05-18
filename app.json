@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/calendar/calendar",
+    "pages/index/index",
+    "pages/logs/logs"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "red",
+    "navigationBarTitleText": "忘川日历",
+    "navigationBarTextStyle":"#fff"
+  }
+}
